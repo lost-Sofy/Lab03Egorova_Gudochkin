@@ -17,23 +17,23 @@
 
 
 Console.WriteLine();
-Console.WriteLine("Постфикс vs префикс");
+Console.WriteLine("оператры сравнения");
 
-int cc = 1;
-Console.WriteLine($"cc++ выводит: {cc++}");
-Console.WriteLine($"После этого cc = {cc}");
+double myGrade = 4.6;
+double passingGrade = 4.0;
+int myAge = 20;
+int votingAge = 18;
 
-int ss = 1;
-Console.WriteLine($"++ss = {++ss}");
-Console.WriteLine($"После этого ss = {ss}");
+bool isPassing = myGrade >= passingGrade;
+bool isExactAge = myAge == votingAge;
+bool canVote = myAge >= votingAge;
+bool isNotFailing = myGrade != 2.0;
 
-Console.WriteLine();
-Console.WriteLine("ловушка");
+Console.WriteLine($"балл {myGrade} >= {passingGrade}: {isPassing}");
+Console.WriteLine($"возраст {myAge} == {votingAge}: {isExactAge}");
+Console.WriteLine($"возраст {myAge} >= {votingAge} (может голосовать): {canVote}");
+Console.WriteLine($"балл {myGrade} != 2.0 (не двойка): {isNotFailing}");
 
-int kk = 0;
-Console.WriteLine($"Попытка №{++kk}");
-Console.WriteLine($"Попытка №{++kk}");
-Console.WriteLine($"всего Попыток №{kk}");
 
 
 
